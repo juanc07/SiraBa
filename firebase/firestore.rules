@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Phase 1: NO client access. Even authenticated clients cannot forge verification,
+    // bookings, address access, dispute decisions or payments.
+    // Server Admin SDK bypasses client rules: backend must still verify authorization.
+    match /{document=**} { allow read, write: if false; }
+  }
+}

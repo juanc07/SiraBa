@@ -1,0 +1,21 @@
+{
+  "name": "siraba-functions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "22" },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test:policy": "node --experimental-strip-types --test test/*.test.mjs",
+    "check": "npm run test:policy && npm run build"
+  },
+  "dependencies": {
+    "firebase-admin": "14.5.0",
+    "firebase-functions": "7.4.0"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "@types/node": "22.15.30"
+  }
+}

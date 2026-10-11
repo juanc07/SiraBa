@@ -1,0 +1,8 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Phase 1: reject uploads/downloads, including ID evidence and photo data.
+    // Narrow per-owner/booking paths will be designed and tested before enabling.
+    match /{allPaths=**} { allow read, write: if false; }
+  }
+}

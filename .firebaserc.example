@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "dev": "REPLACE_WITH_NEW_SIRABA_DEV_PROJECT_ID",
+    "staging": "REPLACE_WITH_NEW_SIRABA_STAGING_PROJECT_ID",
+    "prod": "REPLACE_WITH_NEW_SIRABA_PROD_PROJECT_ID"
+  }
+}
