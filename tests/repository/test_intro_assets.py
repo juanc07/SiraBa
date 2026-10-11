@@ -17,7 +17,7 @@ class IntroBrandingSourceTests(unittest.TestCase):
 
     def test_intro_button_and_preview_notice(self):
         intro = (SOURCE / "ui/screens/IntroScreen.kt").read_text(encoding="utf-8")
-        for expected in ("Magsimula", "siraba_brand_logo", "siraba_intro_worker", "UiTestTags.INTRO_START", "Wala pang aktibong booking"):
+        for expected in ("Magsimula", "siraba_logo_mark", "Sira Ba?", "siraba_intro_worker", "UiTestTags.INTRO_START", "Wala pang aktibong booking"):
             self.assertIn(expected, intro)
 
     def test_main_activity_does_not_skip_intro(self):
