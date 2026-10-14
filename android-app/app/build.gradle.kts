@@ -72,7 +72,8 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.storage)
-    implementation(libs.firebase.functions)
+    // SB-P1-016: minimum 2nd-gen callable client SDK 22.1.1; older BoM maps 22.1.0.
+    implementation("com.google.firebase:firebase-functions:22.1.1")
     implementation(libs.firebase.messaging)
     implementation(libs.firebase.crashlytics)
     implementation(libs.firebase.appcheck)

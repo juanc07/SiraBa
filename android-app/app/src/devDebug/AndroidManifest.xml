@@ -1,3 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application android:networkSecurityConfig="@xml/dev_debug_network_security_config" />
+    <application android:networkSecurityConfig="@xml/dev_debug_network_security_config">
+        <!-- SB-P1-014 TEMPORARY DEV-DEBUG-ONLY; remove after validation -->
+        <activity
+            android:name="net.thinkbloxph.siraba.debug.FoundationBackendTestActivity"
+            android:label="Sira Ba DEV backend check"
+            android:exported="true"
+            android:permission="android.permission.DUMP" />
+    </application>
 </manifest>
